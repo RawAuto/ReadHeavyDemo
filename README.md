@@ -22,7 +22,7 @@ curl http://localhost:8080/health
 
 ```bash
 # Basic list
-curl http://localhost:8080/resources
+curl "http://localhost:8080/resources"
 
 # With pagination
 curl "http://localhost:8080/resources?page=1&limit=5"
@@ -54,7 +54,7 @@ curl "http://localhost:8080/resources?type=theme&sort_by=name&order=asc&limit=5"
 ### Get Single Resource
 
 ```bash
-curl http://localhost:8080/resources/res-001
+curl "http://localhost:8080/resources/res-001"
 ```
 
 ## Response Format
